@@ -29,7 +29,7 @@ Let's start with a simple test that navigates to the todo list example in the An
 
 Copy the following into todo-spec.js:
 
-describe('angularjs homepage todo list', function() { it('should add a todo', function() { browser.get('https://angularjs.org');
+```describe('angularjs homepage todo list', function() { it('should add a todo', function() { browser.get('https://angularjs.org');
 
 element(by.model('todoList.todoText')).sendKeys('write first protractor test');
 element(by.css('[value="add"]')).click();
@@ -42,7 +42,9 @@ expect(todoList.get(2).getText()).toEqual('write first protractor test');
 todoList.get(2).element(by.css('input')).click();
 var completedAmount = element.all(by.css('.done-true'));
 expect(completedAmount.count()).toEqual(2);
-}); }); The describe and it syntax is from the Jasmine framework. browser is a global created by Protractor, which is used for browser-level commands such as navigation with browser.get.
+}); });```
+
+ The describe and it syntax is from the Jasmine framework. browser is a global created by Protractor, which is used for browser-level commands such as navigation with browser.get.
 
 Configuration :
 
