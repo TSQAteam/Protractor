@@ -27,7 +27,7 @@ Protractor needs two files to run, a spec file and a configuration file.
 
 Let's start with a simple test that navigates to the todo list example in the AngularJS website and adds a new todo item to the list.
 
-Copy the following into *todo-spec.js* :
+Copy the following into `todo-spec.js` :
 
 ```describe('angularjs homepage todo list', function() { it('should add a todo', function() { browser.get('https://angularjs.org');
 
