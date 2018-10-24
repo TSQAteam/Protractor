@@ -6,7 +6,7 @@ Protractor runs tests against your application running in a real browser, intera
 
 Use npm to install Protractor globally with:
 
-- npm install -g protractor -  
+...npm install -g protractor...
 
 This will install two command line tools, protractor and webdriver-manager. Try running protractor --version to make sure it's working.
 
