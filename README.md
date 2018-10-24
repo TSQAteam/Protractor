@@ -8,7 +8,7 @@ Protractor runs tests against your application running in a real browser, intera
 
 ```npm install -g protractor```
 
-
+![alt text](https://github.com/TSQAteam/Protractor-Installation-Steps/screens/step 1.png)
 
 * This will install two command line tools, ```protractor``` and ```webdriver-manager```. Try running protractor --version to make sure it's working.
 
