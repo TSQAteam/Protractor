@@ -16,9 +16,14 @@ Protractor runs tests against your application running in a real browser, intera
 
 ```webdriver-manager update``` 
 
+![alt text](https://github.com/TSQAteam/Protractor-Installation-Steps/blob/master/screens/step5.png)
+
 * Now start up a server with:
 
 ```webdriver-manager start```
+
+![alt text](https://github.com/TSQAteam/Protractor-Installation-Steps/blob/master/screens/step4.png)
+
 * This will start up a Selenium Server and will output a bunch of info logs. Your Protractor test will send requests to this server to control a local browser. You can see information about the status of the server at http://localhost:4444/wd/hub.
 
 # Write a test :
