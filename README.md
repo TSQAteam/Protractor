@@ -23,13 +23,13 @@ Protractor runs tests against your application running in a real browser, intera
 
 # Write a test :
 
-Open a new command line or terminal window and create a clean folder for testing.
+* Open a new command line or terminal window and create a clean folder for testing.
 
-Protractor needs two files to run, a spec file and a configuration file.
+* Protractor needs two files to run, a spec file and a configuration file.
 
-Let's start with a simple test that navigates to the todo list example in the AngularJS website and adds a new todo item to the list.
+* Let's start with a simple test that navigates to the todo list example in the AngularJS website and adds a new todo item to the list.
 
-Copy the following into `todo-spec.js` :
+* Copy the following into ```todo-spec.js``` :
 
 ```describe('angularjs homepage todo list', function() { it('should add a todo', function() { browser.get('https://angularjs.org');
 
@@ -48,16 +48,20 @@ expect(completedAmount.count()).toEqual(2);
 });
 ```
 
- The describe and it syntax is from the Jasmine framework. browser is a global created by Protractor, which is used for browser-level commands such as navigation with browser.get.
+ * The ```describe``` and ```it``` syntax is from the Jasmine framework. ```browser``` is a global created by Protractor, which is used for browser-level commands such as navigation with ```browser.get```.
 
-Configuration :
+# Configuration :
 
-Now create the configuration file. Copy the following into conf.js:
+* Now create the configuration file. Copy the following into ```conf.js```:
 
-exports.config = { seleniumAddress: 'http://localhost:4444/wd/hub', specs: ['todo-spec.js'] }; This configuration tells Protractor where your test files (specs) are, and where to talk to your Selenium Server (seleniumAddress). It will use the defaults for all other configuration. Chrome is the default browser.
+```exports.config = { seleniumAddress: 'http://localhost:4444/wd/hub', specs: ['todo-spec.js'] };```
 
-Run the test :
+* This configuration tells Protractor where your test files (specs) are, and where to talk to your Selenium Server (seleniumAddress). It will use the defaults for all other configuration. Chrome is the default browser.
 
-Now run the test with:
+# Run the test :
 
-protractor conf.js You should see a Chrome browser window open up and navigate to the todo list in the AngularJS page, then close itself (this should be very fast!). The test output should be 1 test, 3 assertions, 0 failures. Congratulations, you've run your first Protractor test
+* Now run the test with:
+
+```protractor conf.js```
+
+* You should see a Chrome browser window open up and navigate to the todo list in the AngularJS page, then close itself (this should be very fast!). The test output should be 1 test, 3 assertions, 0 failures. Congratulations, you've run your first Protractor test
